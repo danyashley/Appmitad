@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Debates</title>
+
+<link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+<script src="jquery-1.12.2.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+<div data-role="page" id="home">
+
+<div data-role="panel" data-position="left" data-display="overlay" id="mypanelc">
+   <ul data-role="listview">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#filtros">Filtros</a></li>
+    <li><a href="#debate">Iniciar debate</a></li>
+  
+    </ul>
+</div><!-- /panel -->
+
+<div id="heade1c" data-role="header">
+<a href="#mypanelc"><button id="burger" class="ui-nodisc-icon ui ui-btn ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">bars</button></a>
+<center><img src="img/logo.png" alt="logo" align="middle"></center>
+
+</div>
+
+<div id="contentidoh" data-role="content">
+
+<div id="grande">
+
+<h2>Destacado</h2>
+<a href="#debate1" style="text-decoration:none;"><h1>¿Cómo hago para superar mi fobia a las arañas?</h1></a>
+<h3 id="anon">por An&oacute;nimo</h3>
+
+</div>
+
+<div id="peque1">
+<a href="#" style="text-decoration:none"><h3>El Basquet es mejor que el futbol</h3></a>
+<h4>Por Ram&oacute;n S</h4>
+
+</div>
+
+<div id="peque2">
+<a href="#" style="text-decoration:none;"><h3>Me gustan mucho los recitales de rock</h3></a>
+<h4>Por An&oacute;nimo</h4>
+</div>
+
+<h3>Mas debates</h3>
+
+<div id="vermas">
+
+
+</div>
+</div>
+</div>
+
+<div id="debate1" data-role="page">
+
+<div data-role="panel" data-position="left" data-display="overlay" id="mypanel">
+   <ul data-role="listview">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#filtros">Filtros</a></li>
+    <li><a href="#debate">Iniciar debate</a></li>
+    
+    </ul>
+</div><!-- /panel -->
+
+<div id="header" data-role="header">
+<a href="#mypanel"><button id="boton" class="ui-nodisc-icon ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">bars</button></a>
+<center><img src="img/logo.png" alt="logo" id="logo" align="middle"></center>
+
+</div>
+
+
+<div id="content" data-role="content">
+<div id="main">
+<h1>¿Cómo hago para superar mi fobia a las arañas?</h1>
+<h2>Por Anónimo</h2>
+<p>El miedo a las arañas, la aracnofobia, es algo que padecen muchas personas. Según la Asociación Americana de Psiquiatría, las fobias afectan a más de una de cada diez personas en los EE.UU., y de esos individuos, hasta el 40% de las fobias están relacionados con bichos (incluyendo arañas), ratones, serpientes y murciélagos</p>
+
+		
+<div data-role="tabs" id="tabs">
+  <div data-role="navbar">
+    <ul>
+      <li><a href="ajax-content-ignore.html" data-ajax="false" class="ui-icon-grid ui-btn-icon-notext">one</a></li>
+      <li><a href="#two" data-ajax="false" class="ui-icon-plus ui-btn-icon-notext">two</a></li>
+      <li><a href="ajax-content-ignore.html" data-ajax="false" class="ui-icon-gear ui-btn-icon-notext">three</a></li>
+    </ul>
+  </div>
+  <div id="one"  class="ui-body-d ui-content">
+  </div>
+  <div id="two">
+   <p>Los psicólogos creen que una de las razones por qué la gente teme arañas es debido a alguna experiencia directa con los arácnidos que inculcaron el miedo en ellos. Esto se conoce como el "condicionamiento" vista de aracnofobia.</p>
+  </div>
+</div>
+</div>
+    
+<h2>Debate</h2>
+<div id="comentarios"><ul id="listacom"></ul></div>
+
+
+<form id="formulario">
+
+<input type="text" size="20" name="usuario" id="usuario" placeholder="Nombre" required="required" autocomplete="off"/>
+<textarea class="comentario"  name="comentario" id="comentario" placeholder="Comentario" cols="29" rows="6" aria-required="true" ></textarea>
+
+<input type="submit" value="Enviar" id="enviar"/>
+</form>
+
+</div>
+</div>
+
+
+<div id="filtros" data-role="page">
+
+<div data-role="panel" data-position="left" data-display="overlay" id="mypanelf">
+   <ul data-role="listview">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#filtros">Filtros</a></li>
+    <li><a href="#debate">Iniciar debate</a></li>
+     </ul>
+</div><!-- /panel -->
+
+<div id="heade1r" data-role="header">
+<a href="#mypanelf"><button id="elboton" class="ui-nodisc-icon ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">bars</button></a>
+<center><img src="img/logo.png" alt="logo" align="middle"></center>
+
+</div>
+
+<div data-role="content" id="contf">
+<h2>Filtrar debates por</h2>
+
+<div data-role="controlgroup" id="control">
+<a id="cat" href="index.html" data-role="button">Categor&iacute;as</a>
+<a id="pop" href="index.html" data-role="button">Popularidad</a>
+<a id="alf" href="index.html" data-role="button">Alfabeticamente</a>
+<a id="hola" href="index.html" data-role="button">Fecha de inicio</a>
+</div>
+</div>
+
+
+
+</div>
+
+<div id="debate" data-role="page">
+
+<div data-role="panel" data-position="left" data-display="overlay" id="mypaneld">
+   <ul data-role="listview">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#filtros">Filtros</a></li>
+    <li><a href="#debate">Iniciar debate</a></li>
+     </ul>
+</div><!-- /panel -->
+
+<div id="headerd" data-role="header">
+<a id="ajo" href="#mypaneld"><button class="ui-nodisc-icon ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">bars</button></a>
+<center><img src="img/logo.png" alt="logo" align="middle"></center>
+
+</div>
+<div data-role="content">
+<h2>Iniciar debate</h2>
+<form id="foorm">
+
+<input type="text" name="titulo" id="titulo" placeholder="Titulo"  data-clear-btn="true">
+
+
+<label for="categoria" class="select">Categoria</label>
+            <select name="categoria" id="categoria">
+                <option value="pintura">Pintores</option>
+                <option value="filosofia">Filosofia</option>
+                <option value="nutricion">Nutrici&oacute;n</option>
+                <option value="entretenimiento">Entretenimiento</option>
+            </select>
+
+
+<input type="text" name="nombre" id="nombre" placeholder="Nombre" data-clear-btn="true">
+
+
+        <textarea cols="40" rows="8" name="cuerpo" placeholder="Cuerpo" id="cuerpo"></textarea>
+<input type="submit" value="Enviar"/>
+
+
+</form>
+</div>
+</div>
+<script src="function.js" type="text/javascript"></script>
+
+</body>
+</html>
