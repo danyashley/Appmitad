@@ -8,6 +8,8 @@
     <description>
        Captivate E-Learning Course
     </description>
+        
+    <preference name="android-minSdkVersion" value="14" />
 
     @APPPLATFORMS
 
