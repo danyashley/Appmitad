@@ -11,15 +11,6 @@
         
     <preference name="android-minSdkVersion" value="14" />
 
- <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="tk.greenmunchies"
-          android:sharedUserId="2"
-          android:sharedUserLabel="string resource" 
-          android:versionCode="1"
-          android:versionName="Green"
-          android:installLocation=["auto"] >
-    . . .
-</manifest>
 
 <plugin name="cordova-plugin-device" />
 <plugin name="cordova-plugin-file" />
