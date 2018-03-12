@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "@APPPACKAGE"
-        version   = "@APPVERSION">
-    <name>@APPNAME</name>
+        id        = "1"
+        version   = "1">
+    <name>Green Munchies </name>
 
     <description>
-       Captivate E-Learning Course
+       Green Munchies
     </description>
         
     <preference name="android-minSdkVersion" value="14" />
 
-    @APPPLATFORMS
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="tk.greenmunchies"
+          android:sharedUserId="2"
+          android:sharedUserLabel="string resource" 
+          android:versionCode="1"
+          android:versionName="Green"
+          android:installLocation=["auto"] >
+    . . .
+</manifest>
 
 <plugin name="cordova-plugin-device" />
 <plugin name="cordova-plugin-file" />
